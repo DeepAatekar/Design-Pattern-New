@@ -4,7 +4,8 @@ public class FactoryMain
 {
 	public static void main(String[] args) 
 	{
-		Laptop aLaptop = new AppleLaptop();
+		LaptopFactory aLF = new LaptopFactory();
+		Laptop aLaptop = aLF.getNewLaptop("Omsml");
 		aLaptop.laptopSpec();
 	}
 }
